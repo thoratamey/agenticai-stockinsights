@@ -71,7 +71,9 @@ Example
 
 Example
 > "Get stock price forecast for NVIDIA for the next 15 days"  
-<img width="1366" height="630" alt="2025-10-27 (24)" src="https://github.com/user-attachments/assets/2805ddfc-a20d-400f-8c24-20dbf3e97c31" />
+<img width="1366" height="630" alt="2025-10-27 (24)" src="https://github.com/user-attachments/assets/9961a01d-550e-4583-99a5-0daf232e20cd" />
+
+
 
 ### 🧾 AI Insight Example
 > "Give a insights about NIVIDA.”
