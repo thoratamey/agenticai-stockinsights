@@ -77,6 +77,8 @@ Example
 
 ### 🧾 AI Insight Example
 > "Give a insights about NIVIDA.”
+<img width="1366" height="591" alt="2025-10-27 (25)" src="https://github.com/user-attachments/assets/6338cfd8-708d-4e16-917a-fbb9ebe9978d" />
+
 
 
 ## 🧰 Tech Stack
@@ -91,7 +93,7 @@ Example
 | Frontend | HTML, CSS, JavaScript |
 
 
-## Example Prompts
+## 🧠 Example Prompts
 
 Try these queries on the homepage:
 
