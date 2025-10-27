@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Insights</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Finsight Mini</h1>
+        <div>
+            <a href="/">Home</a>
+            <a href="/forecast">Forecast</a>
+            <a href="/insights">Insights</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Stock Insights (AI Agent)</h1>
+        <form method="post">
+            <input type="text" name="prompt" placeholder="Ask about a stock..." required>
+            <button type="submit">Get Insight</button>
+        </form>
+
+        <div id="loader"></div>
+
+        {% if error %}
+        <p style="color:red; text-align:center;">Error: {{ error }}</p>
+        {% endif %}
+
+        {% if insight %}
+        <h3>AI Insight</h3>
+        <p>{{ insight }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

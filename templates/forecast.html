@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Forecast</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Finsight Mini</h1>
+        <div>
+            <a href="/">Home</a>
+            <a href="/forecast">Forecast</a>
+            <a href="/insights">Insights</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Stock Forecast</h1>
+
+        <form method="post">
+            <input type="text" name="prompt" placeholder="Enter stock query (e.g. 'AAPL next 10 days')" required>
+            <button type="submit">Run Forecast</button>
+        </form>
+
+        <div id="loader"></div>
+
+        {% if error %}
+        <p style="color:red; text-align:center;">Error: {{ error }}</p>
+        {% endif %}
+
+        {% if plot_html %}
+        <div>{{ plot_html|safe }}</div>
+        {% endif %}
+
+        {% if forecast_data %}
+        <h3>Forecast Data</h3>
+        <table>
+            <tr><th>Ticker</th><th>Date</th><th>Median</th><th>Low</th><th>High</th></tr>
+            {% for row in forecast_data %}
+            <tr>
+                <td>{{ row.ticker }}</td>
+                <td>{{ row.date }}</td>
+                <td>{{ row.forecast_median }}</td>
+                <td>{{ row.forecast_lower }}</td>
+                <td>{{ row.forecast_high }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+
+        {% if insights_text %}
+        <h3>AI Insights</h3>
+        <p>{{ insights_text }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

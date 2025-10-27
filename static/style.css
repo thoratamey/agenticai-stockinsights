@@ -1,0 +1,155 @@
+/* ---------- Global ---------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #001f3f, #005f73, #0a9396);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+    color: #fff;
+    min-height: 100vh;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    position: fixed; /* instead of sticky */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+body {
+    padding-top: 80px; /* ensures content starts below navbar */
+}
+
+
+.navbar h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00d9ff;
+}
+
+/* ---------- Main Container ---------- */
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2, h3 {
+    color: #fff;
+    text-align: center;
+}
+
+/* ---------- Forms ---------- */
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #00b4d8;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0077b6;
+}
+
+/* ---------- Table ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    text-align: center;
+}
+
+th {
+    background-color: rgba(0,0,0,0.3);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* ---------- Loading Spinner ---------- */
+#loader {
+    display: none;
+    border: 5px solid rgba(255,255,255,0.3);
+    border-top: 5px solid #00d9ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+/* ---------- Links ---------- */
+a.back-link {
+    color: #00d9ff;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+}
