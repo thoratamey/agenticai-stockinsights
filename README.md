@@ -16,45 +16,6 @@ The app functions like an **AI financial analyst**, turning raw market data into
 
 ---
 
-## 🧩 System Architecture
-
-         ┌──────────────────────────────┐
-         │        User Interface         │
-         │  (HTML, CSS, JS, Plotly)      │
-         └──────────────┬───────────────┘
-                        │  (User Input)
-                        ▼
-         ┌──────────────────────────────┐
-         │         Flask Backend         │
-         │          (app.py)             │
-         └───────┬───────────────┬──────┘
-                 │               │
-      ┌──────────▼────────┐   ┌──▼────────────────┐
-      │  Forecast Agent    │   │   Insight Agent    │
-      │ (forecast_agent.py)│   │   (insights.py)   │
-      └──────────┬────────┘   └──────────┬─────────┘
-                 │                       │
- ┌───────────────▼──────────────┐   ┌────▼──────────────────┐
- │  Historical Stock Data (API) │   │  Large Language Model  │
- │   (Yahoo Finance / yfinance) │   │  (Hugging Face / OpenAI) │
- └───────────────┬──────────────┘   └──────────┬─────────────┘
-                 │                             │
-                 ▼                             ▼
-     ┌────────────────────┐          ┌────────────────────────┐
-     │ Time-Series Model  │          │   Natural Language     │
-     │ (Forecasting prices)│          │   Generation (Insights)│
-     └──────────┬─────────┘          └──────────┬─────────────┘
-                │                                │
-                └──────────────┬─────────────────┘
-                               ▼
-                  ┌────────────────────────────┐
-                  │   Dashboard Visualization   │
-                  │  (Charts + Insights + Data) │
-                  └────────────────────────────┘
-
-
-
----
 
 ## ⚙️ Features
 
@@ -93,6 +54,10 @@ The app functions like an **AI financial analyst**, turning raw market data into
 ---
 
 ## 🖼️ Sample Output
+### 🖼️ Home Page
+<img width="1366" height="649" alt="2025-10-27 (19)" src="https://github.com/user-attachments/assets/10d5d71f-1272-438a-a1ee-4091323dd31c" />
+<img width="1366" height="651" alt="2025-10-27 (20)" src="https://github.com/user-attachments/assets/d863e424-f1f8-4557-8da1-4fae5e681591" />
+<img width="1366" height="642" alt="2025-10-27 (21)" src="https://github.com/user-attachments/assets/3222e3c9-8f3a-49b6-8228-8b7b0d0cd87d" />
 
 ### 📊 Forecast Visualization
 An interactive chart displaying:
@@ -110,10 +75,10 @@ An interactive chart displaying:
 | Component | Technology Used |
 |------------|----------------|
 | Backend | Flask (Python) |
-| Forecasting | Prophet / Time-series model |
+| Forecasting | Chronos model (amazon/chronos-t5-small) |
 | Data Source | Yahoo Finance API |
 | Visualization | Plotly |
-| AI Insights | LLM (e.g., Hugging Face / OpenAI) |
+| AI Insights | LangChain, OpenAI |
 | Frontend | HTML, CSS, JavaScript |
 
 
