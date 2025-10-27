@@ -135,7 +135,7 @@ def stock_forecast_agent(prompt: str) -> Tuple[pd.DataFrame, pd.DataFrame, Dict]
 def stock_insight_agent(stock_symbol: str, df_historical: pd.DataFrame, df_forecast: pd.DataFrame) -> str:
     """Generates professional stock insights using GPT based on forecast + historical data."""
 
-    api_key = "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"
+    api_key = ""
     endpoint = "https://api.openai.com/v1/chat/completions"
 
     headers = {
