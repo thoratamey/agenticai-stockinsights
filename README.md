@@ -1,4 +1,4 @@
-# 📈 AgenticAI Stock Insights
+# 📈 Finsights - AgenticAI Stock Insights
 
 An intelligent web application that predicts future stock trends and generates human-readable insights — combining **data science** and **AI-powered language models** into one interactive dashboard.
 
