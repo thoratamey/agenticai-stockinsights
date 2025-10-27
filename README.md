@@ -57,21 +57,17 @@ The app functions like an **AI financial analyst**, turning raw market data into
 ### 🖼️ Home Page
 <img width="1366" height="649" alt="2025-10-27 (19)" src="https://github.com/user-attachments/assets/10d5d71f-1272-438a-a1ee-4091323dd31c" />
 
-<img width="1366" height="651" alt="2025-10-27 (20)" src="https://github.com/user-attachments/assets/6fb6a3fa-56e8-4016-a4ba-8e8774ddc47b" />
-
-<img width="1366" height="642" alt="2025-10-27 (21)" src="https://github.com/user-attachments/assets/c43834ad-3bcf-4c13-8b5b-08213057d77f" />
-
-
 ### 📊 Forecast Visualization
 An interactive chart displaying:
 - Blue Line → Historical stock prices  
-- Orange Line → Forecasted prices for future days  
+- Orange Line → Forecasted prices for future days
+Example
+> "Get stock price forecast for NVIDIA for the next 15 days"  
+<img width="1366" height="649" alt="2025-10-27 (22)" src="https://github.com/user-attachments/assets/feb9bb13-b5f2-47f9-aba5-81a01bfefddb" />
 
 ### 🧾 AI Insight Example
-> “Tesla stock shows an upward momentum driven by consistent volume growth.  
-> The model predicts moderate gains over the next 10 days, reflecting a bullish short-term outlook.”
+> "Give a insights about NIVIDA.”
 
----
 
 ## 🧰 Tech Stack
 
