@@ -8,7 +8,7 @@ from langchain.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 
 # 🔐 Keep your OpenAI API key here only
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = ""
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.2, api_key=OPENAI_API_KEY)
 
 # ------------------ Tool Definition ------------------
