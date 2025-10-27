@@ -65,6 +65,14 @@ Example
 > "Get stock price forecast for NVIDIA for the next 15 days"  
 <img width="1366" height="649" alt="2025-10-27 (22)" src="https://github.com/user-attachments/assets/feb9bb13-b5f2-47f9-aba5-81a01bfefddb" />
 
+Example
+> "Get stock price forecast for NVIDIA for the next 15 days"
+<img width="1366" height="626" alt="2025-10-27 (23)" src="https://github.com/user-attachments/assets/7546b57d-d175-4532-bfc2-d15e10e32cce" />
+
+Example
+> "Get stock price forecast for NVIDIA for the next 15 days"  
+<img width="1366" height="630" alt="2025-10-27 (24)" src="https://github.com/user-attachments/assets/2805ddfc-a20d-400f-8c24-20dbf3e97c31" />
+
 ### 🧾 AI Insight Example
 > "Give a insights about NIVIDA.”
 
@@ -91,7 +99,7 @@ Try these queries on the homepage:
 
 “Explain Microsoft stock performance this month”
 
-##🌟 Future Enhancements
+## 🌟 Future Enhancements
 
 🔍 Add sentiment analysis from financial news
 
