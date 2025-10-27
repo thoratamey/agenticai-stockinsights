@@ -56,8 +56,11 @@ The app functions like an **AI financial analyst**, turning raw market data into
 ## 🖼️ Sample Output
 ### 🖼️ Home Page
 <img width="1366" height="649" alt="2025-10-27 (19)" src="https://github.com/user-attachments/assets/10d5d71f-1272-438a-a1ee-4091323dd31c" />
-<img width="1366" height="651" alt="2025-10-27 (20)" src="https://github.com/user-attachments/assets/d863e424-f1f8-4557-8da1-4fae5e681591" />
-<img width="1366" height="642" alt="2025-10-27 (21)" src="https://github.com/user-attachments/assets/3222e3c9-8f3a-49b6-8228-8b7b0d0cd87d" />
+
+<img width="1366" height="651" alt="2025-10-27 (20)" src="https://github.com/user-attachments/assets/6fb6a3fa-56e8-4016-a4ba-8e8774ddc47b" />
+
+<img width="1366" height="642" alt="2025-10-27 (21)" src="https://github.com/user-attachments/assets/c43834ad-3bcf-4c13-8b5b-08213057d77f" />
+
 
 ### 📊 Forecast Visualization
 An interactive chart displaying:
